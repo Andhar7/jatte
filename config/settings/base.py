@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
-# AUTH_USER_MODEL = 'account.User'
+AUTH_USER_MODEL = 'account.User'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/chat-admin/'
@@ -77,6 +77,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
+ASGI_APPLICATION = 'jatte.asgi.application'
 
 
 # Password validation
