@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 AUTH_USER_MODEL = 'account.User'
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/chat-admin/'
+LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 CHANNEL_LAYERS = {
@@ -78,7 +78,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-ASGI_APPLICATION = 'jatte.asgi.application'
+ASGI_APPLICATION = 'config.asgi.application'
 
 
 # Password validation
